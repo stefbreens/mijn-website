@@ -10,23 +10,24 @@ body {
   width: 100%;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 a,
 a:hover {
-  text-decoration: none;
-  color: #587e8c;
+  color: #2f2f2f!important;
+  
 }
-
-.zwart {
-  color: #2f2f2f;
-}
-
-span {
-  color: red;
+nav {
+  background-color: #038C7F;
 }
 
 .btn-primary {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #587e8c;
+  --bs-btn-color: #FAFAFA;
+  --bs-btn-bg: #2f2f2f;
   --bs-btn-border-color: #587e8c;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #113743;

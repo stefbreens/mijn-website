@@ -22,7 +22,7 @@
 </head>
 
 <body class="p-3 m-0 border-0 bd-example">
-    <nav class="navbar navbar-expand-md bg-light container-fluid">
+    <nav class="navbar navbar-expand-md container-fluid">
         <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="SB" width="65" height="65">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -79,28 +79,29 @@
                                     <label for="firstName" class="form-label">voornaam <span>*</span></label>
                                     <input type="text" class="form-control" id="firstName" required>
                                 </div>
-                                <div class="col-md-12">
-                                    <label for="lastName" class="form-label">achternaam <span>*</span></label>
-                                    <input type="text" class="form-control" id="lastName" required>
+                                <div class="col-12">
+                                    <label for="mail" class="form-label">e-mail <span>*</span></label>
+                                    <input type="email" class="form-control" id="mail" required>
                                 </div>
                                 <div class="col-md-12">
                                     <label for="mobile" class="form-label">mobiel</label>
                                     <input type="tel" class="form-control" id="mobile"
                                         pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}-[0-9]{2}" placeholder="0412 34 56 78">
                                 </div>
-                                <div class="col-md-12">
-                                    <label for="birthDate" class="form-label">geboortedatum</label>
-                                    <input type="date" class="form-control" id="birthDate">
+                                <div class="col-md-5">
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Je bericht hier."
+                                        required></textarea>
                                 </div>
                             </fieldset>
                             <div class="col-md-3">
                                 <button type="submit" class="btn btn-primary">verzenden</button>
                             </div>
                         </form>
-                        <figure class="col-md-3">
-                            <img src="assets/images/voorbeeld.png" class="img-fluid" alt="voorbeeld" title="voorbeeld">
-                            <figcaption class="h6 small mt-2"></figcaption>
-                        </figure>
+                        <iframe class="col-md-3"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.8805715231197!2d4.4728610575359395!3d51.24823657903282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3f87245fb9ce7%3A0x8790c66cda315e98!2s2900%20Schoten!5e0!3m2!1snl!2sbe!4v1762784119525!5m2!1snl!2sbe"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
 
                     </section>
                 </main>
