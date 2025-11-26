@@ -48,3 +48,21 @@ footer {
   --bs-btn-disabled-bg: #587e8c;
   --bs-btn-disabled-border-color: #587e8c
 }
+
+i {
+  color: #038C7F;
+}
+
+.navbar .nav-link.btn {
+  background-color: #f8f9fa;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+hr {
+  color: #038C7F!important;
+}
+
+.socials.border-start {
+  border-left-color: #038C7F!important;
+}

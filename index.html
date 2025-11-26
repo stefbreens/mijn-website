@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>Home</title>
   <!-- resetten van browsers -->
   <link rel="stylesheet" href="css/reset.css">
   <!-- Bootstrap CSS -->
@@ -22,7 +22,7 @@
 </head>
 
 <body class="p-3 m-0 border-0 bd-example">
-  <nav class="navbar navbar-expand-md container-fluid fixed-top">
+  <nav class="navbar navbar-expand-md container-fluid fixed-top border-bottom border-3">
     <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="SB" width="65" height="65">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -30,15 +30,16 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link active btn btn-light" aria-current="page" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="portfolio.html">Portfolio</a>
+          <a class="nav-link btn btn-light" href="portfolio.html">Portfolio</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <li class="nav-item">
+          <a class="nav-link dropdown-toggle btn btn-light" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
             Projects
           </a>
           <ul class="dropdown-menu">
@@ -51,7 +52,7 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="nav-link btn btn-light" href="contact.html">Contact</a>
         </li>
       </ul>
     </div>
@@ -64,19 +65,36 @@
   <div class="row">
     <main class="col-md-9 mb">
       <section id="homeintro" class="row">
-        <article class="home-item col-md-12 text-center ms-auto row">
+        <article class="home-item col-md-12 ms-auto row">
           <div class="col-md-7">
-            <h2 class="text-uppercase fs-6 fw-bolder pt-3 text-center">Stef Breens</h2>
-            <p class="text-center">Ik ben Stef Breens, 33 jaar, en studeer momenteel voor Systeem- en Netwerkbeheer.
-              Komende uit een andere achtergrond was mijn passie voor netwerken en technologie te groot en koos ik
-              voor een beroepstransitie.
-              Ik combineer een sterke teamgeest met de capaciteit om zelfstandig verantwoordelijkheid op te nemen.
-              Door mijn leergierigheid en doorzettingsvermogen blijf ik mezelf ontwikkelen en zoek ik steeds naar
-              manieren om processen te verbeteren of optimaliseren.
-              Ik denk oplossings- en doelgericht aan elke uitdaging en streef ernaar om met een kritische en
-              gestructureerde aanpak duurzame oplossingen te realiseren.
-              De combinatie van mijn passie voor technologie , analytisch vermogen en doorzettingskracht maakt mij een
-              waardevolle schakel in elk IT-team.
+            <h2 class="text-uppercase fs-6 fw-bolder pt-3 text-center">Stef Breens</h2><br>
+            <p>Stef Breens
+
+              Ik ben Stef Breens, 33 jaar, en studeer momenteel Systeem- en Netwerkbeheer. Na een carrière in een ander
+              vakgebied merkte ik dat mijn interesse steeds meer verschoof naar IT, netwerken en technologie. Die
+              nieuwsgierigheid werd zo groot dat ik bewust koos voor een beroepstransitie. Ik wil niet gewoon “met
+              computers werken”, maar echt begrijpen hoe een netwerk is opgebouwd, hoe servers, clients en
+              cloud-diensten samenwerken en hoe je een stabiele én veilige infrastructuur uitbouwt.</p>
+            <br>
+            <p>Tijdens mijn opleiding bouw ik stap voor stap praktische ervaring op met zaken zoals Windows Server,
+              virtualisatie, VLAN’s, DHCP, routing, switching en basis netwerkinfrastructuur. Ik vind het boeiend om
+              problemen uit te zoeken: van IP-adressering en subnetting tot het oplossen van connectiviteits- of
+              configuratiefouten. Die combinatie van theorie en hands-on labs helpt mij om steeds beter te worden in
+              troubleshooting en gestructureerd werken.</p>
+            <br>
+            Ik werk graag in team, maar neem ook zelfstandig verantwoordelijkheid op. In groepsopdrachten neem ik
+            initiatief, hou ik overzicht en probeer ik helder te communiceren. Tegelijk ben ik leergierig en niet bang
+            om toe te geven dat ik iets nog niet weet. Dan verdiep ik mij net graag in documentatie, documenteer ik
+            mijn stappen en probeer ik uit fouten te leren.
+            <br>
+            <p>
+              Ik denk oplossingsgericht en doelgericht: voor mij is het belangrijk dat een netwerk niet alleen “werkt”,
+              maar ook veilig, onderhoudbaar en logisch opgebouwd is. Ik zoek graag naar manieren om processen te
+              verbeteren of te automatiseren, bijvoorbeeld door kleine scripts, duidelijke documentatie of een betere
+              structuur in de infrastructuur.
+
+              De combinatie van mijn passie voor technologie, analytisch vermogen en doorzettingskracht maakt mij een
+              gemotiveerde en betrouwbare schakel in elk IT-team, met een groeiende focus op systeem- en netwerkbeheer.
             </p>
           </div>
           <figure class="col-md-3 ms-auto">
@@ -93,29 +111,29 @@
       <ul class="list-inline socials float-end h-100 border-start ps-3">
         <li class="list-inline-item">
           <a href="https://www.youtube.com" target="_blank">
-            <i class="bi bi-youtube fs-6 text-light"></i>
+            <i class="bi bi-youtube fs-6"></i>
           </a>
         </li><br>
         <li class="list-inline-item">
           <a href="https://www.instagram.com" target="_blank">
-            <i class="bi bi-instagram fs-6 text-light"></i>
+            <i class="bi bi-instagram fs-6"></i>
           </a>
         </li><br>
         <li class="list-inline-item">
           <a href="https://www.facebook.com" target="_blank">
-            <i class="bi bi-facebook fs-6 text-light"></i>
+            <i class="bi bi-facebook fs-6"></i>
           </a>
         </li><br>
         <li class="list-inline-item">
           <a href="https://twitter.com/" target="_blank">
-            <i class="bi bi-twitter fs-6 text-light"></i>
+            <i class="bi bi-twitter fs-6"></i>
           </a>
         </li><br>
       </ul>
     </aside>
   </div>
 
-  <footer class="container-fluid text-center h6 small p-4 mb-0">&copy; 2025</footer>
+  <footer class="container-fluid text-center h6 small p-4 mb-0">&copy; 2025 Stef Breens</footer>
 </body>
 
 </html>

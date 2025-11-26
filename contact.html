@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Contact</title>
     <!-- resetten van browsers -->
     <link rel="stylesheet" href="css/reset.css">
     <!-- Bootstrap CSS -->
@@ -24,23 +24,26 @@
 </head>
 
 <body class="p-3 m-0 border-0 bd-example">
-    <nav class="navbar navbar-expand-md container-fluid fixed-top">
-        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="SB" width="65" height="65">
+    <nav class="navbar navbar-expand-md container-fluid fixed-top border-bottom border-3">
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logo.png" alt="SB" width="65" height="65">
         </a>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link btn btn-light" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    <a class="nav-link btn btn-light" href="portfolio.html">Portfolio</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    <a class="nav-link btn btn-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Projects
                     </a>
@@ -54,7 +57,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                    <a class="nav-link btn btn-light active" aria-current="page" href="contact.html">Contact</a>
                 </li>
             </ul>
         </div>
@@ -64,69 +67,66 @@
         <h1 class="col display-3 text-center"><br>Contact</h1>
     </header>
     <div class="row">
-        <div class="col-md-11">
-            <div class="row">
-                <main class="pe-3">
-                    <section id="contact" class="row">
-                        <div class="col-12 mb-3">
-                            <h2 class="text-uppercase fs-5 fw-bolder pt-3">contact</h2>
-                            <p>Vul het registratieformulier in.</p>
-                        </div>
+        <main class="col-md-11 pe-3">
+            <section id="contact" class="row">
+                <div class="col-12 mb-3">
+                    <h2 class="text-uppercase fs-5 fw-bolder pt-3">contact</h2>
+                    <p>Vul het registratieformulier in.</p>
+                </div>
 
 
-                        <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
-                            <div class="form-group">
-                                <label for="name">Naam:</label>
-                                <input type="text" class="form-control" id="name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email:</label>
-                                <input type="email" class="form-control" id="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="subject">Onderwerp:</label>
-                                <input type="text" class="form-control" id="subject" name="subject" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Bericht:</label>
-                                <textarea class="form-control" rows="10" id="message" name="message"
-                                    required></textarea>
-                            </div>
-                            <div class="form-group">
-                                <div data-netlify-recaptcha="true"></div>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </form>
-                        <iframe class="col-md-3"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.8805715231197!2d4.4728610575359395!3d51.24823657903282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3f87245fb9ce7%3A0x8790c66cda315e98!2s2900%20Schoten!5e0!3m2!1snl!2sbe!4v1762784119525!5m2!1snl!2sbe"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
+                <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true"
+                    class="col-12 col-lg-9">
+                    <div class="form-group col-md-3">
+                        <label for="name">Naam:</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="subject">Onderwerp:</label>
+                        <input type="text" class="form-control" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="message">Bericht:</label>
+                        <textarea class="form-control" rows="10" id="message" name="message" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <div data-netlify-recaptcha="true"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                <iframe class="col-md-3"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.8805715231197!2d4.4728610575359395!3d51.24823657903282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3f87245fb9ce7%3A0x8790c66cda315e98!2s2900%20Schoten!5e0!3m2!1snl!2sbe!4v1762784119525!5m2!1snl!2sbe"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
 
-                    </section>
-                </main>
-            </div>
-        </div>
+            </section>
+        </main>
+
         <aside class="col-md-1 ms-auto">
             <ul class="list-inline socials float-end h-100 border-start ps-3">
                 <li class="list-inline-item">
                     <a href="https://www.youtube.com" target="_blank">
-                        <i class="bi bi-youtube fs-6 text-light"></i>
+                        <i class="bi bi-youtube fs-6"></i>
                     </a>
                 </li><br>
                 <li class="list-inline-item">
                     <a href="https://www.instagram.com" target="_blank">
-                        <i class="bi bi-instagram fs-6 text-light"></i>
+                        <i class="bi bi-instagram fs-6"></i>
                     </a>
                 </li><br>
                 <li class="list-inline-item">
                     <a href="https://www.facebook.com" target="_blank">
-                        <i class="bi bi-facebook fs-6 text-light"></i>
+                        <i class="bi bi-facebook fs-6"></i>
                     </a>
                 </li><br>
                 <li class="list-inline-item">
                     <a href="https://twitter.com/" target="_blank">
-                        <i class="bi bi-twitter fs-6 text-light"></i>
+                        <i class="bi bi-twitter fs-6"></i>
                     </a>
                 </li><br>
             </ul>
