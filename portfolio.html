@@ -19,6 +19,8 @@
   <!-- eigen geschreven css voor jouw html-bestand -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="assets/images/logo.png" type="images/png">
+  <!--Scripts-->
+  <script src="js/script.js" defer></script>
 </head>
 
 <body class="p-3 m-0 border-0 bd-example">
@@ -31,141 +33,227 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
-        <li class="nav-item btn btn-light">
+        <li class="nav-item">
           <a class="nav-link" href="index.html">Home</a>
         </li>
-        <li class="nav-item btn btn-light">
+        <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="portfolio.html">Portfolio</a>
         </li>
-        <li class="nav-item dropdown btn btn-light">
+        <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Projects
+            Projecten
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item zwart" href="project01.html">Project 01</a></li>
-            <li><a class="dropdown-item" href="#">Project 02</a></li>
-            <li><a class="dropdown-item" href="#">Project 03</a></li>
-            <li><a class="dropdown-item" href="#">Project 04</a></li>
-            <li><a class="dropdown-item" href="#">Project 05</a></li>
-            <li><a class="dropdown-item" href="#">Project 06</a></li>
+            <li><a class="dropdown-item" href="webwiz.html">Webwiz-Project</a></li>
+            <li><a class="dropdown-item" href="project02.html">Toekomstig project</a></li>
+            <li><a class="dropdown-item" href="project03.html">Toekomstig project</a></li>
+            <li><a class="dropdown-item" href="project04.html">Toekomstig project</a></li>
+            <li><a class="dropdown-item" href="project05.html">Toekomstig project</a></li>
+            <li><a class="dropdown-item" href="project06.html">Toekomstig project</a></li>
           </ul>
         </li>
-        <li class="nav-item btn btn-light">
+        <li class="nav-item">
           <a class="nav-link" href="contact.html">Contact</a>
         </li>
       </ul>
     </div>
   </nav>
+  <section id="slider" class="row">
+    <div id="carouselExampleIndicators" class="carousel slide mijn-carousel" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/images/serverrooms.jpg" class="d-block w-100" alt="sfeerbeeld van serverroom">
+          <div class="carousel-caption d-none d-sm-block">
+            <p class="shadow">© OpenArt AI</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/serverrooms1.jpg" class="d-block w-100" alt="sfeerbeeld van serverroom">
+          <div class="carousel-caption d-none d-sm-block">
+            <p class="shadow">© OpenArt AI</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/serverrooms2.jpg" class="d-block w-100" alt="sfeerbeeld van serverroom">
+          <div class="carousel-caption d-none d-sm-block">
+            <p class="shadow">© OpenArt AI</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
 
   <header class="row m-5">
-    <h1 class="col display-3 zwart text-center"><br>Portfolio</h1>
+    <h1 class="col display-3 text-center"><br>Portfolio</h1>
   </header>
+  <div class="container">
+    <div class="row">
+      <main class="col-md-10">
 
-  <div class="row">
-    <main class="col-12 col-md-11">
+        <section id="portfoliointro" class="row g-4 justify-content-center">
+          <article class="col-12 col-lg-8 mb-3 text-center">
+            <h2 class="text-uppercase fs-5 fw-bolder pt-3">Projecten</h2>
+            <p>Hier vindt u mijn projecten.</p>
+          </article>
+          <div class="row justify-content-center g-4">
+            <article class="portfolio-item col-12 col-sm-6 col-md-4 col-lg-4">
+              <a href="webwiz.html" class="text-decoration-none text-reset">
+                <div class="card border-0 shadow-sm">
+                  <figure class="mb-0">
+                    <img src="assets/images/Servers.webp" class="card-img-top" alt="sfeerbeeld netwerken">
+                    <figcaption class="small text-muted px-3 py-2">
+                      Foto © OpenArt AI.
+                    </figcaption>
+                  </figure>
+                  <div class="card-body text-center">
+                    <h3 class="card-title text-uppercase fs-6 fw-bolder zwart mb-1">Webwiz Opdracht</h3>
+                    <p class="card-text small text-muted mb-0">Voor deze opdracht moesten we een netwerk opbouwen voor
+                      een
+                      klein bedrijf volgens de regels van bestructureerd bekabelen.</p>
+                  </div>
+                </div>
+              </a>
+            </article>
 
-      <section id="portfoliointro" class="row g-4">
-        <article class="col-12 mb-3 text-center">
-          <h2 class="text-uppercase fs-5 fw-bolder pt-3 zwart">Projecten</h2>
-          <p>Hier vind u mijn projecten.</p>
-        </article>
+            <article class="portfolio-item col-12 col-sm-6 col-md-4 col-lg-4">
+              <a href="project02.html" class="text-decoration-none text-reset">
+                <div class="card border-0 shadow-sm">
+                  <figure class="mb-0">
+                    <img src="assets/images/netwerkcard2.webp" class="card-img-top" alt="sfeerbeeld netwerken">
+                    <figcaption class="small text-muted px-3 py-2">
+                      Foto © OpenArt AI.
+                    </figcaption>
+                  </figure>
+                  <div class="card-body text-center">
+                    <h3 class="card-title text-uppercase fs-6 fw-bolder zwart mb-1">Te bepalen.</h3>
+                    <p class="card-text small text-muted mb-0">Onder constructie.</p>
+                  </div>
+                </div>
+              </a>
+            </article>
 
-        <article class="portfolio-item col-12 col-sm-6 col-md-4 col-lg-4">
-          <a href="project01.html" class="text-decoration-none text-reset">
-            <div class="card border-0 shadow-sm">
-              <div class="card-body text-center">
-                <h3 class="card-title text-uppercase fs-6 fw-bolder zwart mb-1">Project 01</h3>
-                <p class="card-text small text-muted mb-0">Work in progress</p>
-              </div>
-            </div>
-          </a>
-        </article>
+            <article class="portfolio-item col-12 col-sm-6 col-md-4 col-lg-4">
+              <a href="project03.html" class="text-decoration-none text-reset">
+                <div class="card border-0 shadow-sm">
+                  <figure class="mb-0">
+                    <img src="assets/images/netwerkcard3.webp" class="card-img-top" alt="sfeerbeeld netwerken">
+                    <figcaption class="small text-muted px-3 py-2">
+                      Foto © OpenArt AI.
+                    </figcaption>
+                  </figure>
+                  <div class="card-body text-center">
+                    <h3 class="card-title text-uppercase fs-6 fw-bolder zwart mb-1">Te bepalen.</h3>
+                    <p class="card-text small text-muted mb-0">Onder constructie.</p>
+                  </div>
+                </div>
+              </a>
+            </article>
 
-        <article class="portfolio-item col-12 col-sm-6 col-md-4 col-lg-4">
-          <a href="project01.html" class="text-decoration-none text-reset">
-            <div class="card border-0 shadow-sm">
-              <div class="card-body text-center">
-                <h3 class="card-title text-uppercase fs-6 fw-bolder zwart mb-1">Project 01</h3>
-                <p class="card-text small text-muted mb-0">Work in progress</p>
-              </div>
-            </div>
-          </a>
-        </article>
+            <article class="portfolio-item col-12 col-sm-6 col-md-4 col-lg-4">
+              <a href="project04.html" class="text-decoration-none text-reset">
+                <div class="card border-0 shadow-sm">
+                  <figure class="mb-0">
+                    <img src="assets/images/netwerkcard4.webp" class="card-img-top" alt="sfeerbeeld netwerken">
+                    <figcaption class="small text-muted px-3 py-2">
+                      Foto © OpenArt AI.
+                    </figcaption>
+                  </figure>
+                  <div class="card-body text-center">
+                    <h3 class="card-title text-uppercase fs-6 fw-bolder zwart mb-1">Te bepalen.</h3>
+                    <p class="card-text small text-muted mb-0">Onder constructie.</p>
+                  </div>
+                </div>
+              </a>
+            </article>
 
-        <article class="portfolio-item col-12 col-sm-6 col-md-4 col-lg-4">
-          <a href="project01.html" class="text-decoration-none text-reset">
-            <div class="card border-0 shadow-sm">
-              <div class="card-body text-center">
-                <h3 class="card-title text-uppercase fs-6 fw-bolder zwart mb-1">Project 01</h3>
-                <p class="card-text small text-muted mb-0">Work in progress</p>
-              </div>
-            </div>
-          </a>
-        </article>
+            <article class="portfolio-item col-12 col-sm-6 col-md-4 col-lg-4">
+              <a href="project05.html" class="text-decoration-none text-reset">
+                <div class="card border-0 shadow-sm">
+                  <figure class="mb-0">
+                    <img src="assets/images/netwerkcard5.webp" class="card-img-top" alt="sfeerbeeld netwerken">
+                    <figcaption class="small text-muted px-3 py-2">
+                      Foto © OpenArt AI.
+                    </figcaption>
+                  </figure>
+                  <div class="card-body text-center">
+                    <h3 class="card-title text-uppercase fs-6 fw-bolder zwart mb-1">Te bepalen.</h3>
+                    <p class="card-text small text-muted mb-0">Onder constructie.</p>
+                  </div>
+                </div>
+              </a>
+            </article>
 
-        <article class="portfolio-item col-12 col-sm-6 col-md-4 col-lg-4">
-          <a href="project01.html" class="text-decoration-none text-reset">
-            <div class="card border-0 shadow-sm">
-              <div class="card-body text-center">
-                <h3 class="card-title text-uppercase fs-6 fw-bolder zwart mb-1">Project 01</h3>
-                <p class="card-text small text-muted mb-0">Work in progress</p>
-              </div>
-            </div>
-          </a>
-        </article>
+            <article class="portfolio-item col-12 col-sm-6 col-md-4 col-lg-4">
+              <a href="project06.html" class="text-decoration-none text-reset">
+                <div class="card border-0 shadow-sm">
+                  <figure class="mb-0">
+                    <img src="assets/images/netwerkcard6.webp" class="card-img-top" alt="sfeerbeeld netwerken">
+                    <figcaption class="small text-muted px-3 py-2">
+                      Foto © OpenArt AI.
+                    </figcaption>
+                  </figure>
+                  <div class="card-body text-center">
+                    <h3 class="card-title text-uppercase fs-6 fw-bolder zwart mb-1">Te bepalen.</h3>
+                    <p class="card-text small text-muted mb-0">Onder constructie.</p>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </div>
+        </section>
+        <hr>
+      </main>
 
-        <article class="portfolio-item col-12 col-sm-6 col-md-4 col-lg-4">
-          <a href="project01.html" class="text-decoration-none text-reset">
-            <div class="card border-0 shadow-sm">
-              <div class="card-body text-center">
-                <h3 class="card-title text-uppercase fs-6 fw-bolder zwart mb-1">Project 01</h3>
-                <p class="card-text small text-muted mb-0">Work in progress</p>
-              </div>
-            </div>
-          </a>
-        </article>
+      <aside class="col-md-2 ps-5">
+        <div class="aside-portfolio h-100 ps-3">
+          <ul class="socials-icons mb-3">
+            <li class="list-inline-item d-block mb-2">
+              <a href="https://www.facebook.com/stef.breens/" target="_blank" aria-label="Facebook">
+                <i class="bi bi-facebook fs-6"></i>
+              </a>
+            </li>
+            <li class="list-inline-item d-block mb-2">
+              <a href="https://github.com/stefbreens" target="_blank" aria-label="GitHub">
+                <i class="bi bi-github fs-6"></i>
+              </a>
+            </li>
+          </ul>
 
-        <article class="portfolio-item col-12 col-sm-6 col-md-4 col-lg-4">
-          <a href="project01.html" class="text-decoration-none text-reset">
-            <div class="card border-0 shadow-sm">
-              <div class="card-body text-center">
-                <h3 class="card-title text-uppercase fs-6 fw-bolder zwart mb-1">Project 01</h3>
-                <p class="card-text small text-muted mb-0">Work in progress</p>
-              </div>
-            </div>
-          </a>
-        </article>
-
-      </section>
-      <hr>
-    </main>
-
-    <aside class="col-md-1 ms-auto">
-      <ul class="list-inline socials float-end h-100 border-start ps-3">
-        <li class="list-inline-item">
-          <a href="https://www.youtube.com" target="_blank">
-            <i class="bi bi-youtube fs-6"></i>
-          </a>
-        </li><br>
-        <li class="list-inline-item">
-          <a href="https://www.instagram.com" target="_blank">
-            <i class="bi bi-instagram fs-6"></i>
-          </a>
-        </li><br>
-        <li class="list-inline-item">
-          <a href="https://www.facebook.com" target="_blank">
-            <i class="bi bi-facebook fs-6"></i>
-          </a>
-        </li><br>
-        <li class="list-inline-item">
-          <a href="https://twitter.com/" target="_blank">
-            <i class="bi bi-twitter fs-6"></i>
-          </a>
-        </li><br>
-      </ul>
-    </aside>
+          <nav id="project-links" aria-label="Projectnavigatie">
+            <h2 class="text-uppercase fs-6 fw-bolder">Projecten</h2>
+            <ul class="list-unstyled">
+              <li><a href="webwiz.html">Webwiz-Project</a></li>
+              <li><a href="project02.html">Toekomstig project</a></li>
+              <li><a href="project03.html">Toekomstig project</a></li>
+              <li><a href="project04.html">Toekomstig project</a></li>
+              <li><a href="project05.html">Toekomstig project</a></li>
+              <li><a href="project06.html">Toekomstig project</a></li>
+            </ul>
+          </nav>
+          </section>
+        </div>
+      </aside>
+    </div>
   </div>
-  <footer class="container-fluid text-center h6 small p-4 mb-0">&copy; 2025 Stef Breens</footer>
+  <footer class="container-fluid text-center h6 small p-4 mb-0"> &copy; <span id="year"></span> Stef Breens</footer>
 </body>
 
 </html>

@@ -19,6 +19,9 @@
   <!-- eigen geschreven css voor jouw html-bestand -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="assets/images/logo.png" type="images/png">
+  <!--Scripts-->
+  <script src="js/script.js" defer></script>
+  <script src="js/GitHub.js" defer></script>
 </head>
 
 <body class="p-3 m-0 border-0 bd-example">
@@ -32,44 +35,44 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
         <li class="nav-item">
-          <a class="nav-link active btn btn-light" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link active " aria-current="page" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link btn btn-light" href="portfolio.html">Portfolio</a>
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link dropdown-toggle btn btn-light" href="#" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            Projects
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Projecten
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="project01.html">Project 01</a></li>
-            <li><a class="dropdown-item" href="#">Project 02</a></li>
-            <li><a class="dropdown-item" href="#">Project 03</a></li>
-            <li><a class="dropdown-item" href="#">Project 04</a></li>
-            <li><a class="dropdown-item" href="#">Project 05</a></li>
-            <li><a class="dropdown-item" href="#">Project 06</a></li>
+            <li><a class="dropdown-item" href="webwiz.html">Webwiz-Project</a></li>
+            <li><a class="dropdown-item" href="project02.html">Toekomstig project</a></li>
+            <li><a class="dropdown-item" href="project03.html">Toekomstig project</a></li>
+            <li><a class="dropdown-item" href="project04.html">Toekomstig project</a></li>
+            <li><a class="dropdown-item" href="project05.html">Toekomstig project</a></li>
+            <li><a class="dropdown-item" href="project06.html">Toekomstig project</a></li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link btn btn-light" href="contact.html">Contact</a>
+          <a class="nav-link" href="contact.html">Contact</a>
         </li>
       </ul>
     </div>
   </nav>
 
   <header class="row m-5">
-    <h1 class="col display-3  text-center"><br>About</h1>
+    <h1 class="col display-3  text-center"><br>Wie ben ik?</h1>
   </header>
 
-  <div class="row">
-    <main class="col-md-9 mb">
-      <section id="homeintro" class="row">
-        <article class="home-item col-md-12 ms-auto row">
+
+  <div class="container">
+    <div class="row">
+      <main class="col-md-10 mb">
+        <section id="homeintro" class="row">
+
           <div class="col-md-7">
             <h2 class="text-uppercase fs-6 fw-bolder pt-3 text-center">Stef Breens</h2><br>
-            <p>Stef Breens
-
+            <p>
               Ik ben Stef Breens, 33 jaar, en studeer momenteel Systeem- en Netwerkbeheer. Na een carrière in een ander
               vakgebied merkte ik dat mijn interesse steeds meer verschoof naar IT, netwerken en technologie. Die
               nieuwsgierigheid werd zo groot dat ik bewust koos voor een beroepstransitie. Ik wil niet gewoon “met
@@ -97,43 +100,43 @@
               gemotiveerde en betrouwbare schakel in elk IT-team, met een groeiende focus op systeem- en netwerkbeheer.
             </p>
           </div>
-          <figure class="col-md-3 ms-auto">
+          <figure class="col-md-5 ms-auto">
             <img src="assets/images/Stef_Breens.jpg" class="img-fluid" alt="Stef Breens" title="Stef Breens">
             <figcaption class="h6 small mt-2"></figcaption>
           </figure>
-        </article>
-      </section>
-      <hr>
-    </main>
+
+        </section>
+        <hr>
+      </main>
 
 
-    <aside class="col-md-1 ms-auto">
-      <ul class="list-inline socials float-end h-100 border-start ps-3">
-        <li class="list-inline-item">
-          <a href="https://www.youtube.com" target="_blank">
-            <i class="bi bi-youtube fs-6"></i>
-          </a>
-        </li><br>
-        <li class="list-inline-item">
-          <a href="https://www.instagram.com" target="_blank">
-            <i class="bi bi-instagram fs-6"></i>
-          </a>
-        </li><br>
-        <li class="list-inline-item">
-          <a href="https://www.facebook.com" target="_blank">
-            <i class="bi bi-facebook fs-6"></i>
-          </a>
-        </li><br>
-        <li class="list-inline-item">
-          <a href="https://twitter.com/" target="_blank">
-            <i class="bi bi-twitter fs-6"></i>
-          </a>
-        </li><br>
-      </ul>
-    </aside>
+      <aside class="col-md-2 ps-5">
+        <div class="aside-portfolio h-100 ps-3">
+          <ul class="socials-icons mb-3">
+            <li class="list-inline-item d-block mb-2">
+              <a href="https://www.facebook.com/stef.breens/" target="_blank" aria-label="Facebook">
+                <i class="bi bi-facebook fs-6"></i>
+              </a>
+            </li>
+            <li class="list-inline-item d-block mb-2">
+              <a href="https://github.com/stefbreens" target="_blank" aria-label="GitHub">
+                <i class="bi bi-github fs-6"></i>
+              </a>
+            </li>
+          </ul>
+
+          <section id="updates" class="small">
+            <h2 class="text-uppercase fs-6 fw-bolder">Laatste updates</h2>
+            <ul id="news" class="list-unstyled">
+              <li>GitHub-updates worden geladen...</li>
+            </ul>
+          </section>
+        </div>
+      </aside>
+    </div>
   </div>
 
-  <footer class="container-fluid text-center h6 small p-4 mb-0">&copy; 2025 Stef Breens</footer>
+  <footer class="container-fluid text-center h6 small p-4 mb-0"> &copy; <span id="year"></span> Stef Breens</footer>
 </body>
 
 </html>

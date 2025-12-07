@@ -17,22 +17,48 @@ a:hover {
   
 }
 
+#updates a {
+  color: #FAFAFA;
 
+}
 
-nav {
+#project-links a {
+  color: #FAFAFA!important;
+
+}
+
+.justify {
+  text-align: justify;
+}
+
+.navbar {
   background-color: #038C7F;
 }
 
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
+.mijn-carousel {
+  max-height: 300px;       
+  overflow: hidden;        
+}
+
+.mijn-carousel .carousel-item img {
+  height: 300px;           
   width: 100%;
+  object-fit: cover;       
+}
+
+footer {
   background-color: #038C7F;
   color: #2f2f2f!important;
 }
 
-.btn-primary {
+
+.aside-portfolio {
+  border-left: 1px solid #038C7F; 
+}
+
+
+
+/*.btn-primary {
   --bs-btn-color: #FAFAFA;
   --bs-btn-bg: #2f2f2f;
   --bs-btn-border-color: #587e8c;
@@ -47,16 +73,17 @@ footer {
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #587e8c;
   --bs-btn-disabled-border-color: #587e8c
-}
+}*/
 
 i {
   color: #038C7F;
 }
 
-.navbar .nav-link.btn {
-  background-color: #f8f9fa;
-  border-radius: 0.5rem;
-  text-align: center;
+/*.navbar .nav-link.btn, */.active {
+  color: #ffea00;
+  font-weight: 700;
+  /*border-radius: 0.5rem;
+  text-align: center;*/
 }
 
 hr {

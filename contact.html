@@ -17,10 +17,21 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
         defer>
         </script>
+    <!-- LEAFLET -->
+    <!-- voeg het leaflet css-bestand toe om de kaart van standaard opmaak te voorzien -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <!-- voeg het map.css bestand toe. Hierin zetten we alle css specifiek voor de kaart -->
+    <link rel="stylesheet" href="css/map.css">
+    <!-- voeg de leaflet.js javascript toe aan de pagina en check de integriteit ervan -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <!-- eigen geschreven css voor jouw html-bestand -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="assets/images/logo.png" type="images/png">
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!--Scripts-->
+    <script src="js/script.js" defer></script>
+    <script src="js/map-schoten.js" defer></script>
 </head>
 
 <body class="p-3 m-0 border-0 bd-example">
@@ -43,54 +54,151 @@
                     <a class="nav-link btn btn-light" href="portfolio.html">Portfolio</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link btn btn-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
-                        Projects
+                        Projecten
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="project01.html">Project 01</a></li>
-                        <li><a class="dropdown-item" href="#">Project 02</a></li>
-                        <li><a class="dropdown-item" href="#">Project 03</a></li>
-                        <li><a class="dropdown-item" href="#">Project 04</a></li>
-                        <li><a class="dropdown-item" href="#">Project 05</a></li>
-                        <li><a class="dropdown-item" href="#">Project 06</a></li>
+                        <li><a class="dropdown-item" href="webwiz.html">Webwiz-Project</a></li>
+                        <li><a class="dropdown-item" href="project02.html">Toekomstig project</a></li>
+                        <li><a class="dropdown-item" href="project03.html">Toekomstig project</a></li>
+                        <li><a class="dropdown-item" href="project04.html">Toekomstig project</a></li>
+                        <li><a class="dropdown-item" href="project05.html">Toekomstig project</a></li>
+                        <li><a class="dropdown-item" href="project06.html">Toekomstig project</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn btn-light active" aria-current="page" href="contact.html">Contact</a>
+                    <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <header class="row m-5">
-        <h1 class="col display-3 text-center"><br>Contact</h1>
+        <h1 class="col display-3 text-center"><br><br>Contact</h1>
     </header>
+
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <main class="col-md-10 pe-3">
+                <section id="contact" class="row">
+
+                    <div class="col-md-7">
+                        <div class="mb-3">
+                            <h2 class="text-uppercase fs-5 fw-bolder pt-3">contact</h2>
+                            <p>
+                                Vul dit formulier in.<br>
+                                Ik probeer altijd binnen de 24 uur te reageren.<br>
+                                Velden met een <span>*</span> zijn verplicht.
+                            </p>
+                        </div>
+                        <hr>
+
+                        <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+                            <input type="hidden" name="form-name" value="contact">
+
+                            <fieldset class="row g-3 mb-3">
+                                <legend class="text-uppercase fs-6 fw-bolder pt-3">Contactformulier</legend>
+
+                                <div class="form-group col-md-4">
+                                    <label for="firstName" class="form-label">Naam<span>*</span>:</label>
+                                    <input type="text" class="form-control" id="firstName" name="name" required>
+                                </div>
+
+                                <div class="form-group col-md-4">
+                                    <label for="mail" class="form-label">E-mailadres<span>*</span>:</label>
+                                    <input type="email" class="form-control" id="mail" name="email" placeholder="e-mail"
+                                        required>
+                                </div>
+
+                                <div class="form-group col-md-4">
+                                    <label for="subject" class="form-label">Onderwerp<span>*</span>:</label>
+                                    <input type="text" class="form-control" id="subject" name="subject" required>
+                                </div>
+
+                                <div class="form-group col-12">
+                                    <label for="message" class="form-label">Bericht<span>*</span>:</label>
+                                    <textarea class="form-control" rows="6" id="message" name="message"
+                                        required></textarea>
+                                </div>
+                                <div class="col-12  mb-3 mt-3">
+                                    <label for="satisfied" class="form-label">Wat vind je van mijn portolio? (optioneel)</label>
+                                    <input type="range" class="form-range" min="0" max="10" step="1" id="satisfied">
+                                </div>
+                            </fieldset>
+                            <div class="form-group mb-3">
+                                <div data-netlify-recaptcha="true"></div>
+                            </div>
+
+                            <button type="submit" class="btn btn-light">Verzenden</button>
+                        </form>
+                    </div>
+
+
+                    <div class="col-md-5">
+                        <h2 class="text-uppercase fs-6 fw-bolder pt-3">Woonplaats</h2>
+                        <p>Schoten</p>
+                        <div id="schotenMap" class="mb-3"></div>
+                    </div>
+                </section>
+            </main>
+
+
+
+
+            <aside class="col-md-2 ps-5">
+                <ul class="list-inline socials float-end h-100 border-start ps-3">
+                    <li class="list-inline-item d-block mb-2">
+                        <a href="https://www.facebook.com/stef.breens/" target="_blank" aria-label="Facebook">
+                            <i class="bi bi-facebook fs-6"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item d-block mb-2">
+                        <a href="https://github.com/stefbreens" target="_blank" aria-label="GitHub">
+                            <i class="bi bi-github fs-6"></i>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!--
     <div class="row">
-        <main class="col-md-11 pe-3">
+        <main class="col-md-9 pe-3">
+           
             <section id="contact" class="row">
+            
                 <div class="col-12 mb-3">
                     <h2 class="text-uppercase fs-5 fw-bolder pt-3">contact</h2>
                     <p>Vul het registratieformulier in.</p>
                 </div>
 
-
-                <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true"
-                    class="col-12 col-lg-9">
+<div class="col-lg-9">
+                <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
                     <div class="form-group col-md-3">
-                        <label for="name">Naam:</label>
+                        <label for="name">naam:</label>
                         <input type="text" class="form-control" id="name" name="name" required>
                     </div>
                     <div class="form-group col-md-3">
-                        <label for="email">Email:</label>
+                        <label for="email">e-mailadres</e-mailadres>:</label>
                         <input type="email" class="form-control" id="email" name="email" required>
                     </div>
                     <div class="form-group col-md-3">
-                        <label for="subject">Onderwerp:</label>
+                        <label for="subject">onderwerp:</label>
                         <input type="text" class="form-control" id="subject" name="subject" required>
                     </div>
                     <div class="form-group col-md-3">
-                        <label for="message">Bericht:</label>
+                        <label for="message">bericht:</label>
                         <textarea class="form-control" rows="10" id="message" name="message" required></textarea>
                     </div>
                     <div class="form-group">
@@ -98,6 +206,7 @@
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
+                </div>
                 <iframe class="col-md-3"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.8805715231197!2d4.4728610575359395!3d51.24823657903282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3f87245fb9ce7%3A0x8790c66cda315e98!2s2900%20Schoten!5e0!3m2!1snl!2sbe!4v1762784119525!5m2!1snl!2sbe"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -105,9 +214,10 @@
                 </iframe>
 
             </section>
+        
         </main>
 
-        <aside class="col-md-1 ms-auto">
+        <aside class="col-md-3 ms-auto">
             <ul class="list-inline socials float-end h-100 border-start ps-3">
                 <li class="list-inline-item">
                     <a href="https://www.youtube.com" target="_blank">
@@ -132,10 +242,11 @@
             </ul>
         </aside>
     </div>
+        -->
 
 
 
-    <footer class="container-fluid text-center h6 small p-4 mb-0">&copy; 2025 Stef Breens</footer>
+    <footer class="container-fluid text-center h6 small p-4 mb-0"> &copy; <span id="year"></span> Stef Breens</footer>
 </body>
 
 </html>
