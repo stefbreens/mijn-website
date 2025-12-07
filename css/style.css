@@ -11,21 +11,9 @@ body {
 }
 
 
-a,
-a:hover {
-  color: #2f2f2f!important;
-  
-}
 
-#updates a {
-  color: #FAFAFA;
 
-}
 
-#project-links a {
-  color: #FAFAFA!important;
-
-}
 
 .justify {
   text-align: justify;
