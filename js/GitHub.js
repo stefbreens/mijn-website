@@ -3,7 +3,7 @@ let owner = 'stefbreens';
 
 let repo = 'mijn-website';
 
-let commitsUrl = `https://api.github.com/repos/${owner}/${repo}/commits?per_page=5`;
+let commitsUrl = 'https://api.github.com/repos/${owner}/${repo}/commits?per_page=5';
 // Function to fetch data using fetch
 const fetchData = (url) => {
     return new Promise((resolve, reject) => {
